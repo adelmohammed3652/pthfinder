@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, #141e30, #243b55);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 30px;
+    margin-top: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+}
+.profileimg{
+    width: 70%;
+    margin-right: -30rem;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    z-index: 9999; /* Set a high z-index value to ensure the navbar appears on top */
+}
+
+.navbar h1 {
+    color: #fff;
+    margin: 0;
+}
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.card {
+    width: 300px;
+    height: 150px;
+    transition: all .5s;
+    box-shadow: 15px 15px 30px transparent,
+               -15px -15px 30px transparent;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+  
+  .card:hover {
+    height: 800px;
+    background: white;
+  }
+  
+  .card .header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #212121;
+    margin-bottom: 16px;
+  }
+  
+  .card .header .img-box {
+    width: 90%;
+  }
+  
+  .card .header .title {
+    font-size: 1.1em;
+    letter-spacing: .1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 4px 0 14px 0;
+    transition: all .5s;
+    color: #edededc5;
+  }
+  
+  .card:hover .header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+  }
+  
+  .card:hover .card .header .title {
+    padding: 0;
+  }
+  
+  .card .content {
+    display: block;
+    text-align: justify;
+    color: #212121;
+    margin: 0 18px;
+    max-height: 400px; /* You can adjust this value as needed */
+    overflow-y: auto;
+  }
+  
+  .card .content p {
+    transition: all .5s;
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+  
+  .card .content a {
+    color: #1d8122;
+    cursor: pointer;
+    transition: all .5s;
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .card .content .btn-link:hover {
+    border-bottom: 1px solid #1d8122;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 6rem;
+  }

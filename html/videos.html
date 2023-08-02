@@ -1,0 +1,73 @@
+  <div class="navbar">
+    <div class="logo">المستكشف</div>
+    <ul>
+        <li><a href="pptx.html"> المادة العلمية</a></li>
+        <li><a href="chat.html"> الدردشة</a></li>
+        <li><a href="lessons.html"> الدرس</a></li>
+        <li><a href="videos.html"> الفيديوهات</a></li>
+        <li><a href="audio.html"> السمعيات</a></li>
+        <li><a href="books.html"> الكتب</a></li>
+        <li><a href="home.html">الصفحة الرئيسية</a></li>
+        <li><a href="profile.html"><img class="profileimg" src="assets/homepage/user.png" alt=""></a></li>
+    </ul>
+</div>
+<link rel="stylesheet" href="css/videos.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="css/videos.css">
+    <style>
+        #video-list {
+            margin-left: 2rem;
+            background: rgba(2, 136, 136, 0.452);
+            width: 55rem;
+            margin-top: 5rem;
+        }
+
+        button {
+            width: 15rem;
+            height: 2rem;
+            background: grey;
+        }
+
+        input {
+            width: 15rem;
+            height: 2rem;
+        }
+        a{
+          color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1>Videos</h1>
+    <div id="video-list"></div>
+
+    <script>
+        function displayVideos() {
+            const videoList = document.getElementById('video-list');
+
+            // Retrieve videos from localStorage
+            const videos = JSON.parse(localStorage.getItem('videos')) || [];
+
+            videoList.innerHTML = '';
+
+            videos.forEach((video) => {
+                const videoItem = document.createElement('div');
+                videoItem.innerHTML = `
+                    <h3>${video.title}</h3>
+                    <p><a href="${video.link}" target="_blank">${video.link}</a></p>
+                `;
+
+                videoList.appendChild(videoItem);
+            });
+        }
+
+        // Initial display of videos
+        displayVideos();
+    </script>
+</body>
+</html>

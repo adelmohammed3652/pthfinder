@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, #141e30, #243b55);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 30px;
+    margin-top: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+}
+.profileimg{
+    width: 70%;
+    margin-right: -30rem;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    z-index: 9999; /* Set a high z-index value to ensure the navbar appears on top */
+}
+
+.navbar h1 {
+    color: #fff;
+    margin: 0;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+
+
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 400px;
+    background-image: linear-gradient(to bottom right, #02813b, #036f99);
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    perspective: 800px; /* Adjust the perspective value as needed */
+
+
+  }
+  
+  .cover {
+    top: 0;
+    position: absolute;
+    background-color: rgb(2, 129, 59);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+    transform: rotatey(-95deg); /* Adjust the rotation angle as needed */
+
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .books-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-right: 8rem;
+}
+
+.book {
+    position: relative;
+    /* Rest of your book styles */
+}
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 400px;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    perspective: 800px;
+    /* Adjust the perspective value as needed */
+}
+
+.cover {
+    top: 0;
+    position: absolute;
+    background-image: linear-gradient(to bottom right, #02813b, #036f99);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover p {
+    font-size: 18px;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    color: #fff;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+.flip-card {
+    background-color: transparent;
+    width: 900px;
+    height: 200px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin-top: auto;
+    margin-left: 13rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    background-image: linear-gradient(to bottom right, #02813b, #036f99);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background-image: linear-gradient(to bottom right, #02813b, #036f99);
+    background-image: linear-gradient(to bottom right, #02813b, #036f99);
+    color: #fff;
+  }
+  
+  .flip-card-back {
+    background-image: linear-gradient(to bottom right, #02813b, #036f99);
+    background-image: linear-gradient(to bottom right, #02813b, #036f99);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  h1{
+    margin-top: 5rem;
+  }
+
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
